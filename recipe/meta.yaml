@@ -1,6 +1,6 @@
 {% set name = "trimesh" %}
-{% set version = "4.5.2" %}
-{% set sha256 = "165b12f2898c3e8dec99a2ed05ec5c83eafa2fc8150ba8c30f8b3a62f693433f" %}
+{% set version = "4.5.3" %}
+{% set sha256 = "b1af60399f64f4715d744c5195754068bfeb98981b92feb0c15d016c99379f87" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
