@@ -13,16 +13,16 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=2.7
+    - python {{ python_min }}
     - pip
     - setuptools
   run:
-    - python >=2.7
+    - python >={{ python_min }}
     - numpy
   run_constrained:
     - jsonschema
@@ -48,6 +48,8 @@ requirements:
     - scikit-image
 
 test:
+  requires:
+    - python {{ python_min }}
   commands:
     - python -c "import trimesh"
 
