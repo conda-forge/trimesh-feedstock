@@ -1,6 +1,6 @@
 {% set name = "trimesh" %}
-{% set version = "4.5.3" %}
-{% set sha256 = "b1af60399f64f4715d744c5195754068bfeb98981b92feb0c15d016c99379f87" %}
+{% set version = "4.6.0" %}
+{% set sha256 = "5f248ca790efc241c46ec9a3d7ee744cc728a67cf52a8479f766591be51fa1a4" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
